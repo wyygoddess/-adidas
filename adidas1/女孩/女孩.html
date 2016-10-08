@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css.css "/>
+    <script src="jquery-1.12.4.min.js " ></script>
+
+    <!--左侧部分-->
+    <script>
+//          表格
+        $(document).ready(function () {
+            $(".parentWrap .groupTitle>.gw1").click(function () {
+                $(".gw").slideToggle(600);
+                $(".jia").html("-")
+            });
+
+            $("#tit1").on("click",function(){
+                $(this).append(" <div class='tit2'>开学季精选</div>")
+            })
+            $("#tit3").on("click",function(){
+                $(".tit4").show();
+            })
+
+
+
+
+                $("#group>#groupTit").click(function () {
+                $(".tit1").slideToggle(600)
+            })
+            $("#box1").mouseenter(function () {
+                $(".img-d").show(600)
+            })
+            $("#box1").mouseleave(function () {
+                $(".img-d").hide()
+            })
+            $("#box2").mouseenter(function () {
+                $(".img-d2").show(600)
+            })
+            $("#box2").mouseleave(function () {
+                $(".img-d2").hide()
+            });
+            $("#box3").mouseenter(function () {
+                $(".img-d3").show(600)
+            })
+
+            $("#box3").mouseleave(function () {
+                $(".img-d3").hide()
+            })
+            $("#box4").mouseenter(function () {
+                $(".img-d4").show(600)
+            })
+            $("#box4").mouseleave(function () {
+                $(".img-d4").hide()
+            })
+//                通栏下方
+
+            $(".gril").mouseenter(function () {
+                $(".gril-box").show(600)
+            })
+            $(".gril").mouseleave(function () {
+                $(".gril-box").hide()
+            })
+            $(".gril2").mouseenter(function () {
+                $(".gril-box2").show(600)
+            })
+            $(".gril2").mouseleave(function () {
+                $(".gril-box2").hide()
+            })
+            $(".fangjue>.fang1").mouseenter (function(){
+                $(".fang-r1").show(600)
+            })
+
+            $(".fangjue>.fang1").mouseleave (function(){
+                $(".fang-r1").hide(600)
+            })
+
+            $(".fangjue>.flang2").mouseenter (function(){
+                $(".fang-r2").show(600)
+            })
+
+            $(".fangjue>.flang2").mouseleave (function(){
+                $(".fang-r2").hide(600)
+            })
+
+
+        })
+
+
+
+</Script>
+</head>
+<body>>
+<!--顶部导航-->
+<div class="nav" >
+    <img src="nav.png " alt=""/>
+</div>
+ <!--主题部分-->
+<div class="banner">
+    <img src="banner.jpg" class="img"/>
+    <div class="banner-btm">
+    <ul>
+        <li class="btm"><a href="#">跑步产品清单</a></li>
+        <li class="btm"><a href="#">篮球产品清单</a></li>
+        <li class="btm"><a href="#">足球产品清单</a></li>
+        <li class="btm"><a href="#">训练产品清单</a></li>
+    </ul>
+</div>
+    <!--图片上的方块-->
+    <div id="box1">
+        <div class="img-d">
+            选购跑步系列
+        </div>
+    </div>
+
+
+    <div id="box2">
+        <div class="img-d2">
+            选购篮球系列
+        </div>
+    </div>
+
+    <div id="box3">
+        <div class="img-d3">
+            选购足球系列
+        </div>
+    </div>
+
+    <div id="box4">
+        <div class="img-d4">
+            选购训练系列
+        </div>
+    </div>
+
+    <!--左边表格-->
+    <ul class="parentWrap">
+       
+        <li class="groupTitle">
+            <div class="gw1">
+                <span class="title">女孩商品</span>
+                <p class="jia">+</p>
+            </div>
+            <div  class="gw">
+                <ul class="group">
+                    <li class="groupTit"><a href="#">
+                        <span id="tit1" class="tit">开学季精选</span>
+                        <p>+</p>
+
+                    </a></li>
+                    <li class="groupTit"><a href="#">
+                        <span id="tit3" class="tit">分类</span>
+
+                        <p>+</p>
+                    </a></li>
+                    <li class="groupTit"><a href="#">
+                        <span class="tit">按尺码选购</span>
+                        <p>+</p>
+                    </a></li>
+                    <li class="groupTit"><a href="#">
+                        <span class="tit">精品推荐</span>
+                        <p>+</p>
+                    </a></li>
+                    <li class="groupTitz"><a href="#">
+                        <span class="tit">运动</span>
+                        <p>+</p>
+                    </a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    
+    </div>
+
+
+
+
+
+   <!--右字体部分-->
+<span class="zi-r">
+    <b>开学季</b><br><br><br>
+    <b>整装上阵</b>
+</span>
+<span class="zi-1">运动产品清单</span>
+
+<span class="zi-2">
+    <h class="zi-3">选择运动项目,</h>
+    <br/>
+    <h class="zi-3">选购与之相配的理想装配,</h>
+    <br/>
+    <h class="zi-3">助你在训练或比赛中爆发出从表现.</h>
+</span>
+</div>
+
+<!--下通栏-->
+<div class="tav">
+    <img src="tav.png.jpg " class="t-img"/>
+     <div class="tav-zi">
+         <span class="tav-zi-1">
+             体验、试穿、然后留下钟爱的款式
+         </span>
+         <p class="tav-zi-2">成为 Nike+ 会员，享受30 天内无理由退换货服务。</p>
+         <a href="#" class="tav-zi-3">了解更多</a>
+     </div>
+     <div class="tav-zi-r">
+           <span class="tav-r1">
+            加入NIKE+、享受更多会员服务
+         </span>
+         <p class="tav-r2">丰富的产品选择、专业的教练指导和贴心的运动服务。</p>
+         <a href="#" class="tav-r3">加入nike+</a>
+     </div>
+</div>
+   <!--通栏下方-->
+<div class="gril">
+    <img src="Nike.c2.png " alt=""/>
+    <div class="gril-box">选购我们的装备</div>
+
+    <div class="gb" >
+       <span class="gb1">选购女孩系列</span><br>
+       <span class="gb2">获取灵感来源世界精英运动员</span><br>
+       <span class="gb3">疾速初体验的秋季装备</span>
+     </div>
+</div>
+
+<div class="gril2">
+    <img src="Nike.c4.png "  alt=""/>
+    <div class="gril-box2">立即购买</div>
+    <div class="gb2">
+        <span class="gb4">背包出发</span><br>
+        <span class="gb5">开学季重返校园。Nike双肩包提供有序收纳利器</span><br>
+        <span class="gb6">助你乐享新学期</span>
+
+    </div>
+</div>
+
+      <!--发掘精彩-->
+<div class="fangjue">
+    <img src="Girls_05_ROW.jpg" class="jue-img" alt=""/>
+    <p class="jue1">发掘NIKE的精彩体验</p>
+    <p class="jue2">这里有尺码专家为你提供帮助</p>
+    <p class="jue3">小运动员们往往长得飞快</p>
+    <p class="jue4">所以我们将帮你挑选适合孩子现阶段身材的尺码</p>
+    <p class="jue5">带上你的装备</p>
+    <p class="jue6">倾力呈现转为小运动员打造的所有运动准备。</p>
+    <p class="jue7">让他们闪亮每一季</p>
+        <!--动画效果-->
+    <div class="fang1">
+       <div  class="fang-r1">立即购买</div>
+    </div>
+    <div class="flang2">
+       <div class="fang-r2">立即购买</div>
+    </div>
+</div>
+
+<!--底部列表-->
+<div class="btmo">
+    <img src="bg-module-top-shadow.png" alt=""/>
+</div>
+<!--列表-->
+
+<div class="btmo-nav">
+    <div class="btmo-nav-z">
+        <div class="btmo-nav-z1">
+            <div class="btmo-nav-z2">
+                <div class="btmo-nav-z3">
+                    <h3  class="nav-z3-1">耐克女鞋类</h3>
+                    <ul class="nav-z3-lis">
+                        <li><a href="#">所有女鞋类</a></li>
+                        <li><a href="#">女孩跑步鞋</a></li>
+                        <li><a href="#">女孩篮球鞋</a></li>
+                        <li><a href="#">女孩sportswear系列</a></li>
+                        <li><a href="#">女孩dynamo系列</a></li>
+                        <li><a href="#">女孩Nar Max系列</a></li>
+                        <li><a href="#">女孩Huarache系列</a></li>
+                        <li><a href="#">女孩Roshe One系列</a></li>
+                        <li><a href="#">女孩Free鞋类</a></li>
+                        <li><a href="#">最新女孩鞋</a></li>
+                    </ul>
+                    <div class="jiatu">
+                        <span><img src="plus.png" alt=""/></span>
+                    </div>
+                    <div class="xiaxian"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--列表2-->
+        <div class="btmo-nav-z1">
+            <div class="btmo-nav-z2">
+                <div class="btmo-nav-z3">
+                    <h3  class="nav-z3-1">耐克女孩服装</h3>
+                    <ul class="nav-z3-lis">
+                        <li><a href="#">所有女孩服装</a></li>
+                        <li><a href="#">女孩上衣</a></li>
+                        <li><a href="#">女孩连帽衫</a></li>
+                        <li><a href="#">女孩长裤/紧身裤</a></li>
+                        <li><a href="#">女孩短裤</a></li>
+                        <li><a href="#">女孩专业运动内衣Bar</a></li>
+
+                    </ul>
+                    <div class="jiatu">
+                        <span><img src="plus.png" alt=""/></span>
+                    </div>
+                    <div class="xiaxian"></div>
+                </div>
+            </div>
+        </div>
+     <!--列表3-->
+        <div class="btmo-nav-z1">
+            <div class="btmo-nav-z2">
+                <div class="btmo-nav-z3">
+                    <h3  class="nav-z3-1">耐克女孩装备</h3>
+                    <ul class="nav-z3-lis">
+                        <li><a href="#">所有女孩装备</a></li>
+                        <li><a href="#">女孩背包</a></li>
+                        <li><a href="#">女孩袜子</a></li>
+                        <li><a href="#">女孩帽子</a></li>
+                        <li><a href="#">女孩dynamo系列</a></li>
+                        <li><a href="#">女孩Nar Max系列</a></li>
+                        <li><a href="#">女孩Huarache系列</a></li>
+                        <li><a href="#">女孩Roshe One系列</a></li>
+                        <li><a href="#">女孩Free鞋类</a></li>
+                        <li><a href="#">最新女孩鞋</a></li>
+                    </ul>
+                    <div class="jiatu">
+                        <span><img src="plus.png" alt=""/></span>
+                    </div>
+                    <div class="xiaxian"></div>
+                </div>
+            </div>
+        </div>
+    <!--列表4-->
+        <div class="btmo-nav-z1">
+            <div class="btmo-nav-z2">
+                <div class="btmo-nav-z3">
+                    <h3  class="nav-z3-1">主推专题</h3>
+                    <ul class="nav-z3-list">
+                        <li><a href="#">女孩官网独家发售系列</a></li>
+                        <li><a href="#">儿童官网独家发售系列</a></li>
+                        <li><a href="#">耐克女孩礼品</a></li>
+                        <li><a href="#">最新女孩系列</a></li>
+                        <li><a href="#">女孩dynamo系列</a></li>
+                        <li><a href="#">女孩Nar Max系列</a></li>
+                        <li><a href="#">女孩Huarache系列</a></li>
+                        <li><a href="#">女孩Roshe One系列</a></li>
+                        <li><a href="#">女孩Free鞋类</a></li>
+                        <li><a href="#">最新女孩鞋</a></li>
+                    </ul>
+                    <div class="jiatu">
+                        <span><img src="plus.png" alt=""/></span>
+                    </div>
+                    <div class="xiaxian"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--底部-->
+<div class="bottom">
+    <img src="2.png" alt=""/>
+</div>
+
+
+</body>
+</html>

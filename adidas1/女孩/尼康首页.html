@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/尼康样式.css">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#ipt").focus(function () {
+                $(this).parent().css({
+                    "border":"1px solid black"
+                });
+                $(this).parent().animate({
+                   "width":"230px"
+               });
+                $(this).val("")
+            });
+
+            $("#ipt").blur(function () {
+                $(this).parent().css({
+                    "border":"1px solid #e5e5e5"
+                });
+                $(this).parent().animate({
+                    "width":"190px"
+                })
+                $(this).val("搜索")
+            });
+
+        })
+    </script>
+    <!--js文件丢失-->
+</head>
+<body>
+<!--顶部导航部分-->
+<div>
+    <div class="top">
+        <div class="box clearfix">
+            <!--顶部导航左部分-->
+            <ul class="topl">
+                <li class="li1"><a href="#">Nike+</a></li>
+                <li><a href="#"><span class="aj"></span></a></li>
+                <li><a href="#"><span class="cvs"></span></a></li>
+            </ul>
+            <!--顶部导航右部分-->
+            <ul class="topr">
+                <li><span class="flag"></span></li>
+                <li><a href="#"><span class="shoppingcar"></span></a></li>
+                <li><a href="#"><span class="talking"></span></a></li>
+                <li><a href="#">帮助</a></li>
+                <li><a href="#">加入/登录Nike+账号</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="banner ">
+        <div class="banner-box clearfix">
+            <!--左边logo-->
+            <div class="b-left">
+                <a href="#">
+                    耐克
+                </a>
+            </div>
+            <!--中间-->
+            <div class="b-mid">
+                <ul>
+                    <li><a href="#">男子</a></li>
+                    <li><a href="#">女子</a></li>
+                    <li><a href="#">男孩</a></li>
+                    <li><a href="#">女孩</a></li>
+                    <li><a href="#"><strong>NIKEiD</strong>专属定制</a></li>
+                </ul>
+            </div>
+            <!--右边的搜索框-->
+            <div class="b-right">
+                <span><img src="../images/fdj.png"  alt=""></span>
+                <input type="text" value="搜索" id="ipt">
+            </div>
+        </div>
+
+    </div>
+    <!--隐藏的大图区域-->
+
+    <!--轮播图-->
+    <div class="lbt">
+        <div id="lbt1">
+            <div class="screen">
+                <ul>
+                    <li><img src="../images/li1.jpg" alt=""></li>
+                    <li><img src="../images/li2.jpg" alt=""></li>
+                    <li><img src="../images/li3.jpg" alt=""></li>
+                    <li><img src="../images/li4.jpg" alt=""></li>
+                </ul>
+            </div>
+
+            <div id="arr">
+                <span id="left"><</span>
+                <span id="right">></span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--中间大图-->
+    <!--大图1-->
+    <div class="mid">
+        <h1><img src="../images/text.png" alt=""></h1>
+        <p>我们的跑鞋专为实现你的跑步目标而设计<br>无论是进行持久跑&nbsp,&nbsp锻炼跑&nbsp,&nbsp还是疾速跑</p>
+        <!--<span><a href="#">立刻购买&nbsp&nbsp></a>11111</span>-->
+        <h2><a href="#">立刻购买&nbsp></a></h2>
+        <img src="../images/Fa16_RN_EveryRun_ATHLETE_SLP_P1_1600x700.jpg" alt="">
+    </div>
+    <!--大图2-->
+    <div class="mid2">
+        <div class="mid2-1">
+            <h1>高强度训练</h1>
+            <p>出色装备打造非凡支撑效果与卓越掌控表现，<br>塑就舒适体验之余，亦能助你轻松驾驭每一个动作。</p>
+            <p><a href="#">款式选购指南</a></p>
+        </div>
+        <div class="mid2-2">
+            <h1>你的卓越</h1>
+            <h1>私人教练</h1>
+            <p>通过全新 Nike+ Training Club App<br>与强者一起变强</p>
+            <h2><a href="#">了解更多</a></h2>
+        </div>
+        <div class="mid2-3">
+            <h1>NIKE TECH FLEECE</h1>
+            <p>Tech Pack 全新秋季系列<br>以 Tech Fleece 科技<br>演绎轻盈保暖的穿着体验</p>
+            <h2><a href="#">了解更多</a></h2>
+        </div>
+        <img src="../images/1.jpg" alt="">
+    </div>
+    <!--大图3-->
+    <div class="mid3">
+        <div class="mid3-1">
+            <h1>NIKEiD&nbsp致敬荣耀系列</h1>
+            <p>缔造你的专属风格，<br>结合国家元素，向荣耀致敬。</p>
+            <p><a href="#">款式选购指南</a></p>
+        </div>
+        <img src="../images/2.jpg" alt="">
+    </div>
+    <!--大图4-->
+    <div class="mid4">
+        <div class="mid4-1">
+            <img src="../images/text2.png" alt="">
+        </div>
+        <div class="mid4-2">
+            <p>NIKE全新2016/17中国国家队球服</p>
+            <h2><a href="#">立刻购买&nbsp></a></h2>
+        </div>
+        <img src="../images/3.jpg" alt="">
+    </div>
+    <!--底部列表-->
+    <div class="bottom">
+        <!--940-->
+        <div class="b-box">
+            <ul>
+                <li>电子礼品卡</li>
+                <li>附近商店</li>
+                <li>订阅电子邮件</li>
+                <li>注册NIKE会员</li>
+            </ul>
+            <ul>
+                <li>获取订单</li>
+                <li>获取帮助</li>
+                <li>配送方式</li>
+                <li>退换货物</li>
+                <li>付款选项</li>
+                <li>联系我们</li>
+            </ul>
+            <ul>
+                <li>新闻</li>
+                <li>关于NIKE</li>
+                <li>投资者</li>
+                <li>招贤纳士</li>
+                <li>新品预览</li>
+            </ul>
+            <p><a href="#">社区</a></p>
+            <div class="logo">
+                <img src="../images/wechat.png" alt="" id="wechat">
+                <img src="../images/weibo.png" alt="" id="weibo">
+            </div>
+            <img src="../images/WeChat_QR_Code_Footer.jpg" alt="" id="ewm">
+            <div class="bot"><img src="../images/bot.png" alt=""></div>
+        </div>
+    </div>
+</div>
+
+
+<!--前方高能-->
+<script>
+    var arr = document.getElementById("arr");
+    var left = arr.children[0];
+    var right = arr.children[1];
+    var lbt1 = document.getElementById("lbt1");
+    var screen = lbt1.children[0];
+    var ul = screen.children[0];
+    var li = ul.children;
+    //    移动的宽度
+    var imgWid = screen.offsetWidth;
+
+    //点击时候框内出现箭头
+
+    lbt1.onmouseover = function () {
+        arr.style.display = "block";
+    };
+    lbt1.onmouseout = function () {
+        arr.style.display = "none";
+    };
+    //添加一张假的图一
+    //克隆第一张，放到ul的最后，为了制作无缝效果
+    var firstPic = li[0].cloneNode(true);
+    ul.appendChild(firstPic);
+
+    //    图片滚过的张数
+    var pic = 0
+
+    //    设定定时器
+    var timer = null;
+
+    //    点击左边
+
+    left.onclick = function () {
+        //如果显示的是第一张，pic为0 ，需要抽回到后面假的第一张显示，然后再继续滚动
+        if (pic == 0) {
+            ul.style.left = -(li.length - 1) * imgWid + "px";
+            pic = li.length - 1;
+        }
+        //正常滚动
+        pic--;
+        var target = -pic * imgWid;
+        animate(ul, target);
+    };
+    ////      右边的运动,此时注意的是,右边变成自动播放,封装函数
+    //    right.onclick = function () {
+    //        if (pic == li.length - 1) {
+    //            ul.style.left = 0 + "px";
+    //            pic = 0
+    //        }
+    //        pic++;
+    //        var target = -pic * imgWid;
+    //        animate(ul, target);
+    //    };
+
+    function play() {
+        if (pic == li.length - 1) {
+            ul.style.left = 0 + "px";
+            pic = 0
+        }
+        pic++;
+        var target = -pic * imgWid;
+        animate(ul, target);
+    }
+    ;
+
+
+    right.onclick = function () {
+        play();
+    }
+
+
+    timer = setInterval(play, 1500);
+
+    //点击时候框内出现箭头
+
+    lbt1.onmouseover = function () {
+        arr.style.display = "block";
+        clearInterval(timer);
+    };
+    lbt1.onmouseout = function () {
+        arr.style.display = "none";
+        timer = setInterval(play, 1500);
+    };
+
+
+    //    封印的安你妹特
+    function animate(tag, target) {
+        clearInterval(tag.timer);
+        tag.timer = setInterval(function () {
+            var leader = tag.offsetLeft;
+            //step = ( target - leader ) / 10
+            var step = (target - leader) / 10;
+            //处理一下step的值，对step进行向上取整
+            step = leader > target ? Math.floor(step) : Math.ceil(step);
+            //leader = leader +  step
+            leader = leader + step;
+
+            //设置给left值
+            tag.style.left = leader + "px";
+            if (leader == target) {
+                clearInterval(tag.timer);
+            }
+        }, 17);
+    }
+//
+
+
+//    bottom的变换
+
+    var weibo=document.getElementById("weibo");
+    var wechat=document.getElementById("wechat");
+    var ewm=document.getElementById("ewm");
+
+    wechat.onmouseover=function () {
+            wechat.src="../images/wechat2.png";
+        ewm.style.display="block";
+
+    };
+    wechat.onmouseout=function () {
+        wechat.src="../images/wechat.png"
+        ewm.style.display="none";
+    };
+
+    weibo.onmouseover=function () {
+        weibo.src="../images/weibo2.png"
+    };
+    weibo.onmouseout=function () {
+        weibo.src="../images/weibo.png"
+    };
+</script>
+
+
+</body>
+</html>
